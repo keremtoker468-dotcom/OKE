@@ -14,7 +14,7 @@ export async function generateMotivationLetter(params: {
   whyThisProgram: string;
 }): Promise<string> {
   const message = await anthropic.messages.create({
-    model: "claude-haiku-4-5-20241022",
+    model: "claude-haiku-4-5-20251001",
     max_tokens: 1500,
     system:
       "You are an expert European university admissions consultant writing motivation letters for Turkish students applying to European universities. Write compelling, authentic motivation letters in English (~500 words). Be specific and personal, avoid clichés.",
@@ -51,7 +51,7 @@ export async function explainEligibility(params: {
   budgetDetail: string;
 }): Promise<string> {
   const message = await anthropic.messages.create({
-    model: "claude-haiku-4-5-20241022",
+    model: "claude-haiku-4-5-20251001",
     max_tokens: 500,
     system:
       "Sen Avrupa üniversitelerine başvuru konusunda uzman bir danışmansın. Türk öğrencilere Türkçe tavsiyelerde bulun. Kısa ve öz ol.",
